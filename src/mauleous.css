@@ -9,3 +9,9 @@ nav li a {
 nav li a:hover {
     color: blue;
 }
+
+/* Text */
+
+h1 {
+    @apply text-4xl;
+}
