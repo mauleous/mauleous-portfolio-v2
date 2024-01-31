@@ -48,7 +48,7 @@ const Experiences = () => {
     );
 
     return(
-        <div> 
+        <div id="experiences" className="py-32"> 
             <h1>Experiences</h1>
             <div className="flex flex-col py-16">{exp}</div>
         </div>
