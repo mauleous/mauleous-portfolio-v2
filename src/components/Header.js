@@ -8,8 +8,8 @@ const Header = () => {
     const handleToggle = () => setToggle(!toggle);
 
     return (
-        <header className="flex justify-center px-10 py-2 fixed w-full z-10">
-            <div className="flex justify-between w-full max-w-7xl ">
+        <header className="flex justify-center px-10 py-2 fixed w-full z-10 bg-[#ffffffaa]">
+            <div className="flex justify-between w-full max-w-7xl items-center">
                 <a href="/">
                     <img
                         src={Logo}
@@ -36,7 +36,7 @@ const Header = () => {
             
 
             {/** Mobile Nav */}
-            <nav className={toggle ? "mobile-nav left-0" : "hidden"}>
+            <nav className={!toggle ? "mobile-nav left-[200%]" : "mobile-nav left-0"}>
                 <ul className="flex flex-col">
                     <li>
                         <a href="/#experiences">Experiences</a>
@@ -51,7 +51,7 @@ const Header = () => {
             </nav>
 
             {/** Toggle button */}
-            <button onClick={handleToggle} className="block md:hidden" >
+            <button onClick={handleToggle} className="block md:hidden z-10" >
                 {toggle ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </button>
 
