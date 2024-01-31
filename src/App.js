@@ -3,6 +3,9 @@ import './mauleous.css'
 import Header from "./components/Header";
 import Hero from './components/Hero';
 import Experiences from './components/Experiences';
+import AboutMe from './components/AboutMe';
+import Footer from './components/Footer'
+
 
 function App() {
   return (
@@ -10,24 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Experiences />
-      <header className="App-header">
-        
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React HOHOHO
-        </a>
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-      </header>
+      <AboutMe />
+      <Footer />
     </div>
   );
 }
