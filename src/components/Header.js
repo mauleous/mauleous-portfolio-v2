@@ -8,7 +8,7 @@ const Header = () => {
     const handleToggle = () => setToggle(!toggle);
 
     return (
-        <header className="flex justify-center px-10 py-2 fixed w-full z-10 bg-[#ffffffaa]">
+        <header className="header-nav">
             <div className="flex justify-between w-full max-w-7xl items-center">
                 <a href="/">
                     <img
