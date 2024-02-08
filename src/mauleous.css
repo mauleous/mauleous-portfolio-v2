@@ -1,5 +1,5 @@
 .header-nav {
-    @apply flex justify-center px-10 py-2 fixed w-full z-10 bg-[#ffffff99];
+    @apply flex justify-center px-10 py-2 fixed w-full z-10 bg-white;
     backdrop-filter: blur(2px);
 }
 

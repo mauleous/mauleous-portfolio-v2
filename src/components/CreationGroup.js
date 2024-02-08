@@ -1,8 +1,7 @@
-const CreationGroup = ({hola}) => {
+const CreationGroup = ({ title, onPress }) => {
     return(
-        <div className="py-2">
-            Test asdf ds
-            {hola}
+        <div className="py-2" onClick={onPress}>
+            {title}
         </div>
     )
 }
