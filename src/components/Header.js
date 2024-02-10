@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header className="header-nav">
             <div className="flex justify-between w-full max-w-7xl items-center">
-                <a href="/">
+                <a href="/#home">
                     <img
                         src={Logo}
                         className="h-20"
@@ -20,6 +20,9 @@ const Header = () => {
                 {/** Desktop Nav */}
                 <nav className="hidden md:block">
                     <ul className="flex">
+                        <li>
+                            <a href="/#home">Home</a>
+                        </li>
                         <li>
                             <a href="/#experiences">Experiences</a>
                         </li>
@@ -37,15 +40,18 @@ const Header = () => {
 
             {/** Mobile Nav */}
             <nav className={!toggle ? "mobile-nav left-[200%]" : "mobile-nav left-0"}>
-                <ul className="flex flex-col">
+                <ul className="flex flex-col h-full justify-center gap-20">
                     <li>
-                        <a href="/#experiences">Experiences</a>
+                        <a href="/#home" onClick={handleToggle}>Home</a>
                     </li>
                     <li>
-                        <a href="/#creations">Creations</a>
+                        <a href="/#experiences" onClick={handleToggle}>Experiences</a>
                     </li>
                     <li>
-                        <a href="/#about">About me</a>
+                        <a href="/#creations" onClick={handleToggle}>Creations</a>
+                    </li>
+                    <li>
+                        <a href="/#about" onClick={handleToggle}>About me</a>
                     </li>
                 </ul>
             </nav>

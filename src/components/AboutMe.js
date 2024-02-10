@@ -4,13 +4,13 @@ const AboutMe = () => {
     return(
         <div id="about" className="py-32">
             <h1>About me</h1>
-            <div className="flex py-16">
-                <div className="grow basis-0 px-10 flex justify-end items-center">
+            <div className="flex py-16 flex-col md:flex-row items-center">
+                <div className="grow basis-0 px-10 py-10 flex justify-end items-center">
                     <img className="w-60 rounded-full" 
                         src={profilePicture}/>
                 </div>
-                <div className="grow-0 shrink-0 basis-auto w-1 h-120 rounded-full bg-black"></div>
-                <div className="grow basis-0 px-10 text-left">
+                <div className="grow-0 shrink-0 basis-auto w-3/4 h-1 md:w-1 md:h-80 rounded-full bg-black"></div>
+                <div className="grow basis-0 px-10 py-10 text-center md:text-left">
                     <div className="max-w-xs">
                         <p>I am a UX/UI Developer who loves both 
                             solving design challenges and crafting

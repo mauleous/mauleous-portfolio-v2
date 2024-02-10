@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;400;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,4 +20,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+
+/* Navigation */
+
+.header-nav {
+  @apply flex justify-center px-10 py-2 fixed w-full z-10 bg-white;
+  backdrop-filter: blur(2px);
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed w-full h-screen bg-white duration-500;
+}
+
+nav li a {
+  @apply px-4 py-10 text-2xl md:text-base;
+}
+
+nav li a:hover {
+  color: rgb(67, 101, 194);
+}
+
+/* Text */
+
+h1 {
+  @apply text-5xl;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply font-semibold;
 }

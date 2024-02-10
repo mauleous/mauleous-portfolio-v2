@@ -1,17 +1,19 @@
 import React from "react";
-import axios from "axios";
+//import axios from "axios";
 import { MdOutlineWorkOutline, MdOutlineSchool } from "react-icons/md";
+import experiences from '../data/experiences.json'
 
 const Experiences = () => {
 
-    const [experiences, setExperiences] = React.useState([]);
+    // Decided to load the JSON locally
+    //const [experiences, setExperiences] = React.useState([]);
 
-    React.useEffect(() => {
+    /*React.useEffect(() => {
         axios
         .get("./data/experiences.json")
         .then((result) => setExperiences(result.data))
         .catch(err => console.log(err))
-    }, []);
+    }, []);*/
     
     function containerClass(experienceType) {
         return experienceType ==="work" ? "py-5 flex w-full" : "py-5 flex flex-row-reverse w-full";
@@ -39,7 +41,7 @@ const Experiences = () => {
                 <div className={i + 1 === experiences.length ? "" : "bg-black w-1 h-full rounded-full mt-1 mb-[-30px]"} ></div>
             </div>
             <div className={experienceDetailClass(experience.type)}>
-                <div>{experience.title}</div>
+                <h3>{experience.title}</h3>
                 <div>{experience.location}</div>
                 <div>{experience.period}</div>
             </div>
