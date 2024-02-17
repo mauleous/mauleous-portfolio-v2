@@ -213,7 +213,7 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
                 
                 <MdClose size={30} onClick={onClose} className="shrink-0 cursor-pointer"/>                 
             </div>
-            <div className="flex flex-col w-full h-full grow basis-auto px-10 py-5 items-center box-border">
+            <div className="flex flex-col w-full h-full grow basis-auto px-10 pb-5 items-center box-border">
                     
                 {renderCreation()}
                 
