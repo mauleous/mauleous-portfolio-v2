@@ -12,16 +12,21 @@ const AboutMe = () => {
                 <div className="grow-0 shrink-0 basis-auto w-3/4 h-1 md:w-1 md:h-80 rounded-full bg-black"></div>
                 <div className="grow basis-0 px-10 py-10 text-center md:text-left">
                     <div className="max-w-xs">
-                        <p>I am a UX/UI Developer who loves both 
+                        <p>
+                            I am a UX/UI Developer who loves both 
                             solving design challenges and crafting
-                            designs into reality. Equipped with UX 
+                            designs into reality. 
+                        </p>
+                        <p>
+                            Equipped with UX 
                             design and front-end programming skills,
                             acquired through formal education and work 
                             experience, I am up for challenges that span 
                             from designing and prototyping to 
                             developing appropriate solutions.</p>
-                        <br/>
-                        <p>Let's get in touch and see how we can work together!</p>
+                        <p>
+                            Let's get in touch and see how we can work together!
+                        </p>
                     </div>
                     
                 </div>
