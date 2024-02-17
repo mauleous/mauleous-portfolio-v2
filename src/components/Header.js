@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
+import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
 import Logo from "../assets/019_AMMH_Grey.svg";
+import { Link } from "react-scroll";
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
@@ -21,16 +22,16 @@ const Header = () => {
                 <nav className="hidden md:block">
                     <ul className="flex">
                         <li>
-                            <a href="/#home">Home</a>
+                            <Link to="home" activeClass="active" smooth spy duration={250}>Home</Link>
                         </li>
                         <li>
-                            <a href="/#experiences">Experiences</a>
+                            <Link to="experiences" activeClass="active" smooth spy duration={250}>Experiences</Link>
                         </li>
                         <li>
-                            <a href="/#creations">Creations</a>
+                            <Link to="creations" activeClass="active" smooth spy duration={250}>Creations</Link>
                         </li>
                         <li>
-                            <a href="/#about">About me</a>
+                            <Link to="about" activeClass="active" smooth spy duration={250}>About me</Link>
                         </li>
                     </ul>
                 </nav>
@@ -42,17 +43,18 @@ const Header = () => {
             <nav className={!toggle ? "mobile-nav left-[200%]" : "mobile-nav left-0"}>
                 <ul className="flex flex-col h-full justify-center gap-20">
                     <li>
-                        <a href="/#home" onClick={handleToggle}>Home</a>
+                        <Link to="home" activeClass="active" smooth spy duration={250} onClick={handleToggle}>Home</Link>
                     </li>
                     <li>
-                        <a href="/#experiences" onClick={handleToggle}>Experiences</a>
+                        <Link to="experiences" activeClass="active" smooth spy duration={250} onClick={handleToggle}>Experiences</Link>
                     </li>
                     <li>
-                        <a href="/#creations" onClick={handleToggle}>Creations</a>
+                        <Link to="creations" activeClass="active" smooth spy duration={250} onClick={handleToggle}>Creations</Link>
                     </li>
                     <li>
-                        <a href="/#about" onClick={handleToggle}>About me</a>
+                        <Link to="about" activeClass="active" smooth spy duration={250} onClick={handleToggle}>About me</Link>
                     </li>
+                    
                 </ul>
             </nav>
 
