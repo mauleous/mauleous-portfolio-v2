@@ -1,13 +1,14 @@
 import React from "react";
 //import axios from "axios";
 import { MdClose, MdChevronLeft, MdChevronRight } from "react-icons/md";
-import testPic from '../assets/2d/387 - portrait 1.png';
 
 const CreationGroupDetails = ({dataToLoad, onClose}) => {
     const [creationDetails, setCreationDetails] = React.useState([]);
     const [selectedDetail, setSelectedDetail] = React.useState({});
     const [image, setImage] = React.useState(null);
+    const [importedComponent, setImportedComponent] = React.useState(null);
 
+    /* Initial data load */
     React.useEffect(() => {
         /*if(dataToLoad) {
             axios
@@ -33,6 +34,9 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
                         setSelectedDetail(data2d.default[0]);
                         break;
                     default:
+                        const dataUX = await import('../data/creation-ux.json');
+                        setCreationDetails(dataUX.default);
+                        setSelectedDetail(dataUX.default[0]);
                         break;
                 }
             }
@@ -45,6 +49,7 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
             
     }, []);
 
+    /* load image when selected detail is changed */
     React.useEffect(() => {        
         const loadImage = async() => {
             try {                    
@@ -54,12 +59,30 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
             catch (err) {
                 console.log(err);
             }
-        }        
+        }
 
         if (dataToLoad == '2d') {            
             loadImage();
         }
-        
+
+    }, [selectedDetail]);
+
+    /* load UX data when selected detail is changed */
+    React.useEffect(() => {        
+        const loadCreationUXComponent = async() => {
+            try {                    
+                const response = await import(`./creationUX/${selectedDetail.data}`);
+                const UXComponent = response.default;
+                setImportedComponent(<UXComponent />);
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+
+        if (dataToLoad == 'ux') {            
+            loadCreationUXComponent();
+        }
 
     }, [selectedDetail]);
 
@@ -115,36 +138,58 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
         )
     }
 
+    const render3d = () => {
+        return (
+            <div className="w-full h-full relative border-solid border-black rounded-md border-4">
+                <iframe className="w-full h-full" 
+                        title={selectedDetail.title} 
+                        frameborder="0" 
+                        allowfullscreen 
+                        mozallowfullscreen="true" 
+                        webkitallowfullscreen="true" 
+                        allow="autoplay; fullscreen; xr-spatial-tracking" 
+                        xr-spatial-tracking 
+                        execution-while-out-of-viewport 
+                        execution-while-not-rendered 
+                        web-share 
+                        src={selectedDetail.data}> 
+                </iframe>
+                {leftNavButton()}
+                {rightNavButton()}
+            </div>
+        )
+    }
+
+    const render2d = () => {
+        return (         
+            <div className="h-[calc(100%-160px)] relative border-solid border-black rounded-md border-4">
+                <img className="h-full object-cover" src={image} />                        
+                {leftNavButton()}
+                {rightNavButton()}
+            </div>           
+        )
+    }
+
+    const renderUX = () => {
+        return (
+            <div className="h-[calc(100%-160px)] w-full relative border-solid border-black rounded-md border-4 ">
+                <div className="h-full w-full flex justify-center overflow-y-auto">
+                    {importedComponent}
+                </div>         
+                {leftNavButton()}
+                {rightNavButton()}
+            </div>  
+        )
+    }
+
     const renderCreation = () => {
         switch(dataToLoad) {
             case "3d":
-                return (
-                    <div className="w-full h-full relative border-solid border-black rounded-md border-4">
-                        <iframe className="w-full h-full" 
-                                title={selectedDetail.title} 
-                                frameborder="0" 
-                                allowfullscreen 
-                                mozallowfullscreen="true" 
-                                webkitallowfullscreen="true" 
-                                allow="autoplay; fullscreen; xr-spatial-tracking" 
-                                xr-spatial-tracking 
-                                execution-while-out-of-viewport 
-                                execution-while-not-rendered 
-                                web-share 
-                                src={selectedDetail.data}> 
-                        </iframe>
-                        {leftNavButton()}
-                        {rightNavButton()}
-                    </div>
-                )
+                return render3d();                
+            case "2d":
+                return render2d();
             default:
-                return (         
-                    <div className="h-[calc(100%-130px)] relative border-solid border-black rounded-md border-4">
-                        <img className="h-full object-cover" src={image} />                        
-                        {leftNavButton()}
-                        {rightNavButton()}
-                    </div>           
-                )
+                return renderUX();
         }        
     }
 
@@ -172,7 +217,7 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
                     
                 {renderCreation()}
                 
-                <div className="flex w-full shrink-0 basis-auto justify-start md:justify-center px-5 py-5 gap-4 overflow-x-scroll">
+                <div className="flex w-full shrink-0 basis-auto justify-start md:justify-center px-5 py-5 gap-4 overflow-x-auto">
                     {creationDetails.map((creationDetail) => 
                         <div key={creationDetail.id}
                             onClick={() => setSelectedDetail(creationDetail)}>
