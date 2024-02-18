@@ -6,21 +6,24 @@ const HowRYou = () => {
     return(
         <div className="max-w-3xl h-full text-left py-8 px-8 md:px-12">
             <table className="">
-                <tr>
-                    <td><h3>Work type</h3></td>
-                    <td className="px-2">:</td>
-                    <td>Student work - Product UX Design</td>
-                </tr>
-                <tr>
-                    <td><h3>Location</h3></td>
-                    <td className="px-2">:</td>
-                    <td>University of Tampere</td>
-                </tr>
-                <tr>
-                    <td><h3>Year</h3></td>
-                    <td className="px-2">:</td>
-                    <td>2014</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td><h3>Work type</h3></td>
+                        <td className="px-2">:</td>
+                        <td>Student work - Product UX Design</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Location</h3></td>
+                        <td className="px-2">:</td>
+                        <td>University of Tampere</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Year</h3></td>
+                        <td className="px-2">:</td>
+                        <td>2014</td>
+                    </tr>
+                </tbody>
+                
             </table>
             <div className="w-full h-0.5 bg-black rounded-full my-8"></div>
             <h2>Background</h2>

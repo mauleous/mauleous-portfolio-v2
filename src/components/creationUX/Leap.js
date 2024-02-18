@@ -4,21 +4,24 @@ const Leap = () => {
     return(
         <div className="max-w-3xl h-full text-left py-8 px-12">
             <table>
-                <tr>
-                    <td ><h3>Work type</h3></td>
-                    <td className="px-2">:</td>
-                    <td>Company work - Software UX Design and Development</td>
-                </tr>
-                <tr>
-                    <td><h3>Location</h3></td>
-                    <td className="px-2">:</td>
-                    <td>Documill</td>
-                </tr>
-                <tr>
-                    <td><h3>Year</h3></td>
-                    <td className="px-2">:</td>
-                    <td>2016 - present</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td ><h3>Work type</h3></td>
+                        <td className="px-2">:</td>
+                        <td>Company work - Software UX Design and Development</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Location</h3></td>
+                        <td className="px-2">:</td>
+                        <td>Documill</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Year</h3></td>
+                        <td className="px-2">:</td>
+                        <td>2016 - present</td>
+                    </tr>
+                </tbody>
+                
             </table>
             <div className="w-full h-0.5 bg-black rounded-full my-8"></div>
             <h2>Background</h2>
@@ -47,16 +50,19 @@ const Leap = () => {
                 as well as interactive prototypes using HTML, CSS, and JavaScript.
             </p>
             <table>
-                <tr>    
-                    <td><h3>Tools</h3></td>
-                    <td className="px-2">:</td>
-                    <td>Gliffy Diagram, InVision</td>
-                </tr>
-                <tr>
-                    <td><h3>Technologies</h3></td>
-                    <td className="px-2">:</td>
-                    <td>HTML, CSS, JavaScript</td>
-                </tr>
+                <tbody>
+                    <tr>    
+                        <td><h3>Tools</h3></td>
+                        <td className="px-2">:</td>
+                        <td>Gliffy Diagram, InVision</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Technologies</h3></td>
+                        <td className="px-2">:</td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                </tbody>
+                
             </table>
             <br/><br/>
             <h2>Development</h2>
@@ -69,11 +75,13 @@ const Leap = () => {
                 So it was the right decision to use Git from the beginning of the development.
             </p>
             <table>
-                <tr>
-                    <td><h3>Technologies</h3></td>
-                    <td className="px-2">:</td>
-                    <td>VueJS, HTML, CSS, Git</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td><h3>Technologies</h3></td>
+                        <td className="px-2">:</td>
+                        <td>VueJS, HTML, CSS, Git</td>
+                    </tr>
+                </tbody>                
             </table>
             <br/><br/>
             <h2>Becoming Development Project Manager</h2>
@@ -86,11 +94,14 @@ const Leap = () => {
                 
             </p>
             <table>
-                <tr>
-                    <td><h3>Tools</h3></td>
-                    <td className="px-2">:</td>
-                    <td>JIRA, Confluence</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td><h3>Tools</h3></td>
+                        <td className="px-2">:</td>
+                        <td>JIRA, Confluence</td>
+                    </tr>
+                </tbody>
+                
             </table>
             <br/><br/>
             <h2>Building Support Page</h2>
@@ -104,11 +115,14 @@ const Leap = () => {
                 I also involved in writing the content of the support page.
             </p>
             <table>
-                <tr>
-                    <td><h3>Tools</h3></td>
-                    <td className="px-2">:</td>
-                    <td>Confluence, Scroll Viewport</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td><h3>Tools</h3></td>
+                        <td className="px-2">:</td>
+                        <td>Confluence, Scroll Viewport</td>
+                    </tr>
+                </tbody>
+                
             </table>
             <br/><br/>
             <h2>Further iterations</h2>
