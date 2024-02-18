@@ -113,7 +113,7 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
     const leftNavButton = () => {
         return (
             
-                <div className="absolute left-0 top-0 h-full flex items-center z-20">
+                <div className="hidden md:flex absolute left-0 top-0 h-full items-center z-20">
                     <div className="flex items-center px-2 h-1/2 cursor-pointer hover:backdrop-blur-sm hover:bg-white/30 rounded-r-md"
                         onClick={previousItem}>
                         <MdChevronLeft size={60}/>
@@ -127,7 +127,7 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
     const rightNavButton = () => {
         return (
             
-                <div className="absolute right-0 top-0 h-full flex items-center z-20">
+                <div className="hidden md:flex absolute right-0 top-0 h-full items-center z-20">
                     <div className="flex items-center px-2 h-1/2 cursor-pointer hover:backdrop-blur-sm hover:bg-white/30 rounded-l-md"
                         onClick={nextItem}>
                         <MdChevronRight size={60}/>
@@ -173,7 +173,7 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
     const renderUX = () => {
         return (
             <div className="h-[calc(100%-160px)] w-full relative border-solid border-black rounded-md border-4 ">
-                <div className="h-full w-full flex justify-center overflow-y-auto">
+                <div className="h-full w-full flex justify-center overflow-y-auto ">
                     {importedComponent}
                 </div>         
                 {leftNavButton()}
@@ -202,18 +202,16 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
         }
     }
 
-
-
     return (
         <div className="fixed flex flex-col w-full h-full top-0 left-0 right-0 bg-white z-10">
             <div className="flex justify-between px-10 py-5 shrink-0 basis-auto">
                 <div className="grow text-left md:text-center pl-0 md:pl-6">
-                    <h1>{selectedDetail.title}</h1>
+                    <h1 className="text-3xl md:text-5xl">{selectedDetail.title}</h1>
                 </div>
                 
                 <MdClose size={30} onClick={onClose} className="shrink-0 cursor-pointer"/>                 
             </div>
-            <div className="flex flex-col w-full h-full grow basis-auto px-10 pb-5 items-center box-border">
+            <div className="flex flex-col w-full h-full grow basis-auto px-0 md:px-10 pb-5 items-center box-border">
                     
                 {renderCreation()}
                 
