@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmauleous_portfolio_v2=self.webpackChunkmauleous_portfolio_v2||[]).push([[429],{1429:(o,e,p)=>{o.exports=p.p+"static/media/359 - portrait 01 copy.83b27eb97959f6f2b51a.png"}}]);
