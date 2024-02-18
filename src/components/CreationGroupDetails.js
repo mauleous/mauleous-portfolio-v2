@@ -46,7 +46,15 @@ const CreationGroupDetails = ({dataToLoad, onClose}) => {
         };
 
         loadJson();
+        document.body.style.overflow = 'hidden';
             
+    }, []);
+
+    /* Cleanup when unmount */
+    React.useEffect( () => {
+        return () => {
+            document.body.style.overflow = 'unset';
+        }
     }, []);
 
     /* load image when selected detail is changed */
