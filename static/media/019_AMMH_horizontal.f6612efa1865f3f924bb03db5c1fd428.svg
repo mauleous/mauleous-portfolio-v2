@@ -1,0 +1,39 @@
+<svg id="Group_2_copy_2" data-name="Group 2 copy 2" xmlns="http://www.w3.org/2000/svg" width="1509" height="333.5" viewBox="0 0 3018 667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #858585;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #424242;
+      }
+    </style>
+  </defs>
+  <g id="A">
+    <path id="Polygon_2_copy" data-name="Polygon 2 copy" class="cls-1" d="M334.259,0.1L667.607,666.79H0.911Z"/>
+    <path id="Polygon_2" data-name="Polygon 2" class="cls-2" d="M334.255,0.1L500.928,333.442H167.58Z"/>
+  </g>
+  <g id="M">
+    <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M1117.6,333.444L784.253,666.792V0.1Z"/>
+    <path id="Polygon_1_copy" data-name="Polygon 1 copy" class="cls-1" d="M1117.59,333.444l333.34,333.348V0.1Z"/>
+    <path id="Rectangle_1_copy_6" data-name="Rectangle 1 copy 6" class="cls-1" d="M784.259,333.444H1450.93V666.778H784.259V333.444Z"/>
+    <path id="Rectangle_1_copy_7" data-name="Rectangle 1 copy 7" class="cls-2" d="M1117.59,333.444h333.34V666.778H1117.59V333.444Z"/>
+  </g>
+  <g id="M_copy" data-name="M copy">
+    <path id="Polygon_1_copy_2" data-name="Polygon 1 copy 2" class="cls-1" d="M1901.27,333.555L1567.92,666.9V0.208Z"/>
+    <path id="Polygon_1-2" data-name="Polygon 1" class="cls-2" d="M1901,333H1568L1567.92,0.208Z"/>
+    <path id="Polygon_1_copy-2" data-name="Polygon 1 copy" class="cls-1" d="M1901.25,333.555L2234.6,666.9V0.208Z"/>
+    <path id="Rectangle_1_copy_6-2" data-name="Rectangle 1 copy 6" class="cls-1" d="M1567.93,333.555h666.66V666.889H1567.93V333.555Z"/>
+  </g>
+  <g id="H">
+    <path id="Rectangle_1_copy_17" data-name="Rectangle 1 copy 17" class="cls-1" d="M2351,0h292.99V667.014H2351V0Z"/>
+    <path id="Rectangle_1_copy_18" data-name="Rectangle 1 copy 18" class="cls-1" d="M2729,0h288.99V667.014H2729V0Z"/>
+    <path id="Rectangle_1_copy_9" data-name="Rectangle 1 copy 9" class="cls-2" d="M2729,0h288.99V500H2729V0Z"/>
+    <path id="Rectangle_1_copy_10" data-name="Rectangle 1 copy 10" class="cls-2" d="M2644.01,501.007h87V334h-87V501.007Z"/>
+  </g>
+</svg>
