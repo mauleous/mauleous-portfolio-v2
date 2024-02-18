@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmauleous_github_io=self.webpackChunkmauleous_github_io||[]).push([[610],{2610:(u,a,e)=>{u.exports=e.p+"static/media/341 - portrait 1 - 1.2d0064a69b363d61a10d.png"}}]);

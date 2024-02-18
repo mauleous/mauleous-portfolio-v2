@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmauleous_portfolio_v2=self.webpackChunkmauleous_portfolio_v2||[]).push([[610],{2610:(o,a,e)=>{o.exports=e.p+"static/media/341 - portrait 1 - 1.2d0064a69b363d61a10d.png"}}]);
