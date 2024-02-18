@@ -12,7 +12,15 @@ const AboutMe = () => {
                         <div className="text-center pt-6">
                             <div>Achmad Maulana Malikul Hakim</div>
                             <div>achmad.maulana.m.h[at]gmail.com</div>
-                            <div>@mauleous</div>
+                            <div className="whitespace-pre flex justify-center w-full gap-2">
+                                <a className="underline" href="https://www.linkedin.com/in/achmadmaulanamh/">
+                                    LinkedIn
+                                </a>
+                                <span>|</span>
+                                <a className="underline" href="https://www.instagram.com/mauleous/">
+                                    Instagram
+                                </a>
+                            </div>
                         </div> 
                     </div>
                      
