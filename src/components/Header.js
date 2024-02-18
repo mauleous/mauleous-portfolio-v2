@@ -41,7 +41,7 @@ const Header = () => {
 
             {/** Mobile Nav */}
             <nav className={!toggle ? "mobile-nav left-[200%]" : "mobile-nav left-0"}>
-                <ul className="flex flex-col h-full justify-center gap-20">
+                <ul className="flex flex-col h-full justify-center gap-6">
                     <li>
                         <Link to="home" activeClass="active" smooth spy duration={250} onClick={handleToggle}>Home</Link>
                     </li>
