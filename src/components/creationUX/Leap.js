@@ -26,12 +26,6 @@ const Leap = () => {
             <div className="w-full h-0.5 bg-black rounded-full my-8"></div>
             <h2>Background</h2>
             <p>
-                The company would like to tackle issues that happen when there are multiple people
-                involved in writing and completing complex documents. Contract documents would be a good example of this,
-                since it might involve multiple people to write them, getting approvals
-                from another parties, and might be signed by yet different set of people.
-            </p>
-            <p>
                 Documill Leap is the company's answer to enhance collaboration when preparing complex documents. 
                 It offers simultaneous multi-user text editing, custom approval process, and digital document signing.
             </p>

@@ -32,7 +32,7 @@ const HowRYou = () => {
             </p>
             <h2>Idea</h2>
             <p>
-                We came up with a concept called HowRYou bracelet. The concept consist of a wearable device that allow people to share their feeling in a very basic way; happy or not happy. The other part of the concept is a software where user can see how other persons are doing. With aimed to make people share their feelings more often to the persons the love by simplify the way to tell their feelings.
+                We came up with a concept called HowRYou bracelet. The concept consist of a wearable device that allow people to share their feeling in a very basic way; happy or not happy. The other part of the concept is a software where user can see how other persons are doing. With aimed to make people share their feelings more often to the people they love by simplifying the way to tell their feelings.
             </p>
             <img className="mb-6" src={imgHowRYou}/>
             <h2>Work</h2>
@@ -41,7 +41,7 @@ const HowRYou = () => {
             </p>
             <img className="mb-6" src={imgScreen1}/>
             <p>
-                I also prepared paper-based prototype of the bracelet to make the idea to be more tangible. 
+                I also prepared a paper-based prototype of the bracelet to make the idea more tangible. 
             </p>
             <img className="mb-6" src={imgPaperBracelet}/>            
             <h2>Result</h2>
