@@ -3,35 +3,35 @@
         "id": 6,
         "type": "work",
         "title": "Development Project Manager",
-        "location": "Documill",
+        "location": "Documill - Finland",
         "period": "2021 - present"
     },
     {
         "id": 5,
         "type": "work",
         "title": "UX/UI Developer",
-        "location": "Documill",
+        "location": "Documill - Finland",
         "period": "2016 - 2021"
     },
     {
         "id": 4,
         "type": "study",
         "title": "Human-Technology Interaction - Master",
-        "location": "University of Tampere",
+        "location": "University of Tampere - Finland",
         "period": "2014 - 2016"
     },
     {
         "id": 3,
         "type": "work",
         "title": "Software Engineer",
-        "location": "KANA - A Verint company",
+        "location": "KANA - A Verint company - Indonesia",
         "period": "2011 - 2014"
     },
     {
         "id": 2,
         "type": "study",
         "title": "Information System Development - Master",
-        "location": "HAN University",
+        "location": "HAN University - Netherlands",
         "period": "2009 - 2010"
     },
     {
@@ -45,7 +45,7 @@
         "id": 0,
         "type": "study",
         "title": "Computer Science - Bachelor",
-        "location": "Bina Nusantara University",
+        "location": "Bina Nusantara University - Indonesia",
         "period": "2004 - 2008"
     }
 ]
